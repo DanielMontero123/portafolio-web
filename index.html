@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <audio id="background-music" src="music/fondo.mp3"></audio>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header" data-aos="zoom-in" data-aos-duration="1000">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio Web de Danny</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mí</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#resumen" onclick="seleccionar()">Resumen Curricular</a></li>
+                    <li><a href="#proyectos onclick="seleccionar()"">Proyectos</a></li>
+                    <li><a href="#contactame" onclick="seleccionar()">Contáctame</a></li>
+                </ul>
+            </nav>
+            <div data-aos="zoom-in" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+    </div>
+
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner" data-aos="fade-down" data-aos-duration="1500">
+            <div class="contenido-img">
+                <img src="img/perfil2.jpeg" alt="">
+            </div>
+            <h1>Daniel Montero</h1>
+            <h2>Ingeniero en Software - Desarrollador FullStack y Móvil</h2>
+            <div class="redes">
+                <a class="hover-facebook" href="https://www.facebook.com/danny.montero001/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="hover-twitter" href="https://twitter.com/DannysMontero" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="hover-linkedin" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a class="hover-github" href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="contenido-banner" data-aos="fade-up" data-aos-duration="1500">
+            <h1>"La música es la poesía del aire"</h1>
+            <h2>HAZ CLICK</h2>
+            <h1></h1>
+            <div class="boton-musica">
+                <a id="play-button">EMPEZAR YA!</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <hr class="separador">
+
+    <!-- SOBRE MÍ -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion" data-aos="fade-right" data-aos-duration="1500">
+            <h2>Sobre Mí</h2>
+            <div class="contenedor-sobremi">
+                <p><span>Hola, mi nombre es Daniel Montero</span>. Soy de Ecuador y estudiante de 8vo semestre de la
+                    carrera de Ingeniería
+                    en Software en la Universidad Técnica de Ambato. Soy una persona creativa con ideas innovadoras,
+                    capaz de generar
+                    soluciones novedosas a los problemas que se me presentan. Además, como programador enfocado en web y
+                    móvil,
+                    tengo habilidades técnicas que me permiten llevar a la práctica mis ideas y crear proyectos
+                    digitales.
+                    Con mi conocimiento y creatividad, estoy seguro de que soy capaz de desarrollar proyectos
+                    interesantes y atractivos.
+                    Mi combinación de habilidades técnicas y creatividad me convierten en un valioso recurso para
+                    cualquier
+                    equipo de trabajo o proyecto en el que me involucre.</p>
+            </div>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombres y Apellidos:</strong>
+                            Daniel Eduardo Montero López
+                        </li>
+                        <li>
+                            <strong>Fecha de Nacimiento:</strong>
+                            04-Enero-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            0983049712
+                        </li>
+                        <li>
+                            <strong>Residencia:</strong>
+                            Ambato, Ecuador
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            eduardomontero123@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- hobbies -->
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-hobbies">
+                        <div class="hobbies" data-aos="flip-left" data-aos-duration="1500">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="hobbies" data-aos="flip-left" data-aos-duration="1500">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="hobbies" data-aos="flip-left" data-aos-duration="1500">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="hobbies" data-aos="flip-left" data-aos-duration="1500">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>LEER</span>
+                        </div>
+                        <div class="hobbies" data-aos="flip-left" data-aos-duration="1500">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>SOCIALIZAR</span>
+                        </div>
+                        <div class="hobbies" data-aos="flip-left" data-aos-duration="1500">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELÍCULAS</span>
+                        </div>
+                        <div class="hobbies" data-aos="flip-left" data-aos-duration="1500">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>SERIES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+        <div class="contenido-seccion" data-aos="zoom-in-down" data-aos-duration="1500">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades Técnicas -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="habilidad">
+                        <span>Java</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso java">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Android Studio</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso android">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Cloud Computing</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso cloud">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Base de Datos</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso baseD">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>HTML y CSS</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso htmlcss">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>ReactJS</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso react">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="habilidad">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso equipo">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso adaptabilidad">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Aprendizaje Continuo</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso aprendizaje">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso comunicacion">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Inglés</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso ingles">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Creatividad e Innovación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso creatividad">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <!-- RESUMEN CURRICULAR -->
+    <section id="resumen" class="resumen">
+        <div class="contenido-seccion" data-aos="zoom-out" data-aos-duration="1500">
+            <h2>Resumen Curricular</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Educación Secundaria</h4>
+                        <p>Bachiller en Ciencias</p>
+                        <span class="instituto">Unidad Educativa "Juan León Mera" - La Salle</span>
+                        <span class="fecha">Período: (2013 - 2018)</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Educación Universitaria</h4>
+                        <p>Título Académico: Associate of Science - AS, Computer Software Engineering</p>
+                        <span class="instituto">Universidad Técnica de Ambato</span>
+                        <span class="fecha">Período: (2018 - 2023)</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Android Developer</h4>
+                        <span class="instituto">Freelance</span>
+                        <span class="fecha">Julio 2022 - Septiembre 2022</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion" data-aos="flip-right" data-aos-duration="1500">
+            <h2>Algunos Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto" data-aos="zoom-out-right" data-aos-duration="1500">
+                    <img src="img/imgPedidos.png" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación para gestionar pedidos</h3>
+                        <p>Desarrollado en Android (JAVA)</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="zoom-out-left" data-aos-duration="1500">
+                    <img class="caf" src="img/imgCafeteria.png" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación para reservas e información de cafetería</h3>
+                        <p>Desarrollado en Android (KOTLIN)</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="zoom-out-right" data-aos-duration="1500">
+                    <img src="img/imgColecciones.png" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación para compra de juguetes de colección</h3>
+                        <p>Desarrollado en Android (KOTLIN)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <!-- CONTACTAME -->
+
+    <section id="contactame" class="contactame">
+        <div class="contenido-seccion" data-aos="fade-down-left" data-aos-duration="1500">
+            <h2>CONTÁCTAME</h2>
+            <div class="fila">
+                <!-- form -->
+                <div class="col">
+                    <form id="formEmail">
+                        <input type="text" name="name" id="nombre" placeholder="Nombre y Apellido">
+                        <input type="email" name="email" id="email" placeholder="Correo Electrónico">
+                        <input type="tel" name="phone" id="phone" placeholder="Teléfono">
+                        <input type="text" id="subject" name="subject" placeholder="Tema">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <script src="script.js"></script>
+                <!-- map -->
+                <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                    <img src="img/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Albert Einstein - Conjunto "VENECIA II"
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llámame: 03 2512028 / +593983049712
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: eduardomontero123@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes" data-aos="zoom-in-up" data-aos-duration="1500">
+            <a class="hover-facebook" href="https://www.facebook.com/danny.montero001/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="hover-twitter" href="https://twitter.com/DannysMontero" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="hover-linkedin" href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="hover-github" href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <h2>"Haz lo que mejor sabes hacer, pero sé capaz de cambiar con el tiempo". Paula Scher</h2>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
+</body>
+</html>
