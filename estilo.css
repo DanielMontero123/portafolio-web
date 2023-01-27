@@ -765,9 +765,9 @@ hr.separador{
     position: relative;
     background-color: #252A2E;
     padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    top: 20%;
+    max-width: 300px;
+    left: 10%;
+    top: 10%;
     transform: translate(-50%, -50%);
 }
 .contactame .col .info ul{
@@ -865,7 +865,7 @@ footer .arriba{
         display: block;
     }
     .sobremi .fila .col{
-        width: fit-content;
+        width: 100%;
     }
 
     .habilidades .fila{
