@@ -94,6 +94,35 @@ hr.separador{
     text-align: center;
     border-radius: 40px;
 }
+.inicio .contenido-banner a.cv{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.inicio .contenido-banner a .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #e99a1a;
+    z-index: -1;
+    transition: 1s;
+}
+
+.inicio .contenido-banner a:hover .overlay{
+    width: 100%;
+}
 
 .inicio .contenido-banner img{
     margin-top: 40px;
